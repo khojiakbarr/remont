@@ -26,19 +26,19 @@ export default function MyNavBar() {
           <div className=" scroller flex gap-10">
             <div className="flex">
               <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] xl:text-[54px]">
+              <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
                 +998 99 722 47 53
               </span>
             </div>
             <div className="flex">
               <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] xl:text-[54px]">
+              <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
                 +998 99 722 47 53
               </span>
             </div>{" "}
             <div className="flex">
               <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] xl:text-[54px]">
+              <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
                 +998 99 722 47 53
               </span>
             </div>
