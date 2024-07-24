@@ -1,0 +1,10 @@
+.button {
+  background: linear-gradient(193deg, #ff8a00 0%, #ffb800 100%),
+    linear-gradient(
+      314deg,
+      rgba(255, 255, 255, 0) 0%,
+      #fff 43.23%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  box-shadow: rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.41);
+}

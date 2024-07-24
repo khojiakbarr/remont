@@ -1,0 +1,40 @@
+.bg-nav {
+  background-image: url("../../assets/images/navbar.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navbar {
+  z-index: 9999;
+}
+
+.animate_wrapper {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  transform: rotate(42deg) translateY(-70px);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.scroller {
+  position: absolute;
+  top: 0;
+  display: flex;
+  margin-right: -50%;
+  animation: scroll 30s linear infinite;
+
+  /* margin-left: -100%; */
+  /* @media (max-width: 767px) {
+    margin-left: -320%;
+  } */
+}

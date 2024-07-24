@@ -1,0 +1,7 @@
+.bg_hero {
+  background-image: url("../../assets/images/bg_hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -99;
+}
