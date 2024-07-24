@@ -21,24 +21,24 @@ export default function MyNavBar() {
   return (
     <>
       <header className="">
-        <div className="bg-nav overflow-hidden w-full h-[180px]  md:h-[380px] absolute ring-0 top-0 z-[-1] "></div>
+        <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 z-[-1] "></div>
         <div className="animate_wrapper">
-          <div className=" scroller flex gap-10 ">
+          <div className=" scroller flex gap-10">
             <div className="flex">
-              <img className="w-[35px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] ">
+              <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
+              <span className="text-[20px] text-[#593f0d] xl:text-[54px]">
                 +998 99 722 47 53
               </span>
             </div>
             <div className="flex">
-              <img className="w-[35px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d]">
+              <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
+              <span className="text-[20px] text-[#593f0d] xl:text-[54px]">
                 +998 99 722 47 53
               </span>
             </div>{" "}
             <div className="flex">
-              <img className="w-[35px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d]">
+              <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
+              <span className="text-[20px] text-[#593f0d] xl:text-[54px]">
                 +998 99 722 47 53
               </span>
             </div>

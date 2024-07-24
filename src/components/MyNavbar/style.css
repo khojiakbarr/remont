@@ -15,7 +15,23 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  transform: rotate(42deg) translateY(-70px);
+  transform: rotate(27deg) translateY(-65px);
+
+  @media (min-width: 767px) {
+    transform: rotate(32deg) translateY(-170px);
+  }
+
+  @media (min-width: 1280px) {
+    transform: rotate(25deg) translateY(-160px);
+  }
+
+  @media (min-width: 1400px) {
+    transform: rotate(22deg) translateY(-160px);
+  }
+
+  @media (min-width: 1536px) {
+    transform: rotate(22deg) translateY(-180px);
+  }
 }
 
 @keyframes scroll {
@@ -26,9 +42,11 @@
     transform: translateX(-50%);
   }
 }
+
 .scroller {
   position: absolute;
   top: 0;
+  right: 0;
   display: flex;
   margin-right: -50%;
   animation: scroll 30s linear infinite;
