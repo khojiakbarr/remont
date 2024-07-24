@@ -15,10 +15,16 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  transform: rotate(27deg) translateY(-65px);
+  transform: rotate(37deg) translateY(-60px);
 
+  @media (min-width: 430px) {
+    transform: rotate(32deg) translateY(-70px);
+  }
+  @media (min-width: 540px) {
+    transform: rotate(26deg) translateY(-80px);
+  }
   @media (min-width: 767px) {
-    transform: rotate(32deg) translateY(-170px);
+    transform: rotate(29deg) translateY(-170px);
   }
 
   @media (min-width: 1280px) {
