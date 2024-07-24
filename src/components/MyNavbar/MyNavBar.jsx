@@ -21,7 +21,7 @@ export default function MyNavBar() {
   return (
     <>
       <header className="">
-        <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 z-[-1] "></div>
+        <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 "></div>
         <div className="animate_wrapper">
           <div className=" scroller flex gap-10">
             <div className="flex">
@@ -44,7 +44,7 @@ export default function MyNavBar() {
             </div>
           </div>
         </div>
-        <nav className="navbar flex container mx-auto px-[15px] w-full mt-[10px] items-center ">
+        <nav className=" relative navbar flex container mx-auto px-[15px] w-full mt-[10px] items-center z-10  ">
           <Link to="/">
             <img className={` w-[80px] md:w-[200px]`} src={logo} alt="logo" />
           </Link>
