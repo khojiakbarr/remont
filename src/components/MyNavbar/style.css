@@ -15,7 +15,7 @@
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  transform: rotate(37deg) translateY(-60px);
+  transform: rotate(38deg) translateY(-65px);
 
   @media (min-width: 430px) {
     transform: rotate(32deg) translateY(-70px);

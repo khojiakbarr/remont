@@ -7,13 +7,12 @@ import insta from "../../assets/images/insta.svg";
 import youtube from "../../assets/images/youtube.svg";
 import tg from "../../assets/images/tg.svg";
 import tel_icon from "../../assets/images/telefon_icon.svg";
-import Button from "../Button/Button";
-
+import "../../components/Button/style.css";
 export default function MyNavBar() {
   const [state, setState] = useState(false);
   useEffect(() => {
     console.log(window.innerWidth);
-    if (window.innerWidth < 400) {
+    if (window.innerWidth < 550) {
       setState(true);
     }
   }, []);
@@ -44,15 +43,22 @@ export default function MyNavBar() {
             </div>
           </div>
         </div>
+
         <nav className=" relative navbar flex container mx-auto px-[15px] w-full mt-[10px] items-center z-10  ">
           <Link to="/">
-            <img className={` w-[80px] md:w-[200px]`} src={logo} alt="logo" />
+            <img
+              className={` w-[100px] md:w-[200px] mt-[8px]`}
+              src={logo}
+              alt="logo"
+            />
           </Link>
           <ul className={` flex gap-[6px] items-center md:gap-[12px]`}>
             <li className=" w-[50px] md:w-auto">
               {state ? (
                 <div className=" text-[8px] text-white flex items-center ml-[10px]">
-                  <Button text="Связаться" />
+                  <button className="button text-black text-[14px] px-[10px] rounded-[8px] font-medium  mt-[8px]">
+                    Связаться
+                  </button>
                 </div>
               ) : (
                 <Link
