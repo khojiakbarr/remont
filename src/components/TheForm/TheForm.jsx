@@ -49,7 +49,8 @@ export default function TheForm() {
                 />
               </div>
             </div>
-          </form>
+          </form> 
+          
         </div>
         <div className="right flex-1"></div>
       </div>
