@@ -5,3 +5,16 @@
   background-position: center;
   z-index: -99;
 }
+
+.wrapper_scroll {
+  animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

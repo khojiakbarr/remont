@@ -7,13 +7,12 @@ import insta from "../../assets/images/insta.svg";
 import youtube from "../../assets/images/youtube.svg";
 import tg from "../../assets/images/tg.svg";
 import tel_icon from "../../assets/images/telefon_icon.svg";
-import Button from "../Button/Button";
-
+import "../../components/Button/style.css";
 export default function MyNavBar() {
   const [state, setState] = useState(false);
   useEffect(() => {
     console.log(window.innerWidth);
-    if (window.innerWidth < 400) {
+    if (window.innerWidth < 550) {
       setState(true);
     }
   }, []);
@@ -21,9 +20,11 @@ export default function MyNavBar() {
   return (
     <>
       <header className="">
-        <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 "></div>
-        <div className="animate_wrapper">
-          <div className=" scroller flex gap-10">
+        <div className=" relative z-[2]">
+          <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 "></div>
+        </div>
+        <div className="animate_wrapper relative z-[3]">
+          <div className="scroller flex gap-10">
             <div className="flex">
               <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
               <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
@@ -44,25 +45,29 @@ export default function MyNavBar() {
             </div>
           </div>
         </div>
+
         <nav className=" relative navbar flex container mx-auto px-[15px] w-full mt-[10px] items-center z-10  ">
           <Link to="/">
-            <img className={` w-[80px] md:w-[200px]`} src={logo} alt="logo" />
+            <img
+              className={` w-[100px] md:w-[200px] mt-[8px]`}
+              src={logo}
+              alt="logo"
+            />
           </Link>
           <ul className={` flex gap-[6px] items-center md:gap-[12px]`}>
             <li className=" w-[50px] md:w-auto">
               {state ? (
                 <div className=" text-[8px] text-white flex items-center ml-[10px]">
-                  <Button text="Связаться" />
+                  <button className="button text-black text-[14px] px-[10px] rounded-[8px] font-medium  mt-[8px]">
+                    Связаться
+                  </button>
                 </div>
               ) : (
-                <Link
-                  className=" text-[8px] text-white md:text-[24px] ml-[20px] "
-                  to={"/"}
-                >
+                <div className=" text-[8px] text-white md:text-[24px] ml-[20px] ">
                   <span className="md:w-[100px] ">
                     Связаться с нами чере месседжеры
                   </span>
-                </Link>
+                </div>
               )}
             </li>
             <li className={`${state ? "hidden" : "block"} w-[30px]`}>

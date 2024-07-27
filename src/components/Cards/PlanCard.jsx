@@ -1,14 +1,14 @@
 import React from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 
-export default function PlanCard() {
+export default function PlanCard({ image }) {
   return (
     <div
       className="w-80 rounded-[10px] bg-[#f9f9f9] p-[23px_20px]"
       style={{ boxShadow: "0px 2px 24px 4px rgba(0,0,0,0.15)" }}
     >
       <img
-        src="rectangle-122.jpeg"
+        src={image}
         className="w-full h-48 rounded-[10px] object-cover"
         alt=""
       />
@@ -34,7 +34,6 @@ export default function PlanCard() {
           — Сан. узел - плитка
         </span>
       </p>
-
       <PrimaryButton />
     </div>
   );
