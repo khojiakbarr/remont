@@ -26,6 +26,7 @@ export default function Contact() {
             <li className="list-disc ml-[30px] mb-[6px]">
               Поможет определиться с видом ремонта
             </li>
+            
           </ul>
         </div>
         {/* ///Right */}
