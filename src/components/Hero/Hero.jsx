@@ -5,7 +5,7 @@ import kamera from "../../assets/images/kamera.png";
 
 export default function Hero() {
   return (
-    <div className="bg_hero  ">
+    <div className="bg_hero overflow-hidden">
       <div className="pt-[40px] md:pt-[80px] container mx-auto px-[15px]">
         <div className="wrapper  relative z-[0]  flex justify-between">
           <div className="hero_title">
@@ -33,13 +33,63 @@ export default function Hero() {
               />
             </button>
           </div>
-          <div className="hidden md:block mr-[30px] ">
-            <div className=" w-[320px] backdrop-blur-[13px]">
-              <p className="font-[400] text-[18px]">
-                Установим камеру, для наблюдения за ремонтом в режиме реального
-                времени с компьютера или мобильного телефона
-              </p>
-              <img src={kamera} alt="kamera" />
+          <div className="wrapper_scroll hidden  absolute right-0 top-0 w-[50%] md:flex justify-center ">
+            <div className="scroller_content flex flex-col gap-[20px] mr-[40px]">
+              <div className="rounded-[20px]">
+                <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">
+                  <p className="font-[400] text-[18px] text-center text-white ">
+                    Установим камеру, для наблюдения за ремонтом в режиме
+                    реального времени с компьютера или мобильного телефона
+                  </p>
+                  <img src={kamera} alt="kamera" />
+                </div>
+              </div>
+              <div className="rounded-[20px]">
+                <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">
+                  <p className="font-[400] text-[18px] text-center text-white ">
+                    Установим камеру, для наблюдения за ремонтом в режиме
+                    реального времени с компьютера или мобильного телефона
+                  </p>
+                  <img src={kamera} alt="kamera" />
+                </div>
+              </div>
+              <div className="rounded-[20px]">
+                <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">
+                  <p className="font-[400] text-[18px] text-center text-white ">
+                    Установим камеру, для наблюдения за ремонтом в режиме
+                    реального времени с компьютера или мобильного телефона
+                  </p>
+                  <img src={kamera} alt="kamera" />
+                </div>
+              </div>
+              {/* ///poftor */}
+              <div className="rounded-[20px]">
+                <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">
+                  <p className="font-[400] text-[18px] text-center text-white ">
+                    Установим камеру, для наблюдения за ремонтом в режиме
+                    реального времени с компьютера или мобильного телефона
+                  </p>
+                  <img src={kamera} alt="kamera" />
+                </div>
+              </div>{" "}
+              <div className="rounded-[20px]">
+                <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">
+                  <p className="font-[400] text-[18px] text-center text-white ">
+                    Установим камеру, для наблюдения за ремонтом в режиме
+                    реального времени с компьютера или мобильного телефона
+                  </p>
+                  <img src={kamera} alt="kamera" />
+                </div>
+              </div>{" "}
+              <div className="rounded-[20px]">
+                <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">
+                  <p className="font-[400] text-[18px] text-center text-white ">
+                    Установим камеру, для наблюдения за ремонтом в режиме
+                    реального времени с компьютера или мобильного телефона
+                  </p>
+                  <img src={kamera} alt="kamera" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

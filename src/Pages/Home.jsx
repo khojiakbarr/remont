@@ -11,6 +11,8 @@ import kraska from "../assets/images/kraska.svg";
 import "../components/Button/style.css";
 import { Link } from "react-router-dom";
 import TheForm from "../components/TheForm/TheForm";
+import Doverya from "../components/Doverya/Doverya";
+import Contact from "../components/Contact/Contact";
 
 export default function Home() {
   return (
@@ -66,6 +68,8 @@ export default function Home() {
         </Link>
       </div>
       <TheForm />
+      <Doverya />
+      <Contact />
     </>
   );
 }

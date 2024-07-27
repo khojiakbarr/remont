@@ -1,0 +1,17 @@
+.bg_contact {
+  background-image: url("../../assets/images/bg_contact.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.inputControl {
+  border: 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.412);
+  outline: none !important;
+}
+
+/* .inputControl:focus {
+  outline: none !important;
+  border: none !important;
+} */

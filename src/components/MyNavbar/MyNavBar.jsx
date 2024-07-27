@@ -20,9 +20,11 @@ export default function MyNavBar() {
   return (
     <>
       <header className="">
-        <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 "></div>
-        <div className="animate_wrapper">
-          <div className=" scroller flex gap-10">
+        <div className=" relative z-[2]">
+          <div className="bg-nav overflow-hidden w-full h-[180px] md:h-[380px] absolute ring-0 top-0 "></div>
+        </div>
+        <div className="animate_wrapper relative z-[3]">
+          <div className="scroller flex gap-10">
             <div className="flex">
               <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
               <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
@@ -61,14 +63,11 @@ export default function MyNavBar() {
                   </button>
                 </div>
               ) : (
-                <Link
-                  className=" text-[8px] text-white md:text-[24px] ml-[20px] "
-                  to={"/"}
-                >
+                <div className=" text-[8px] text-white md:text-[24px] ml-[20px] ">
                   <span className="md:w-[100px] ">
                     Связаться с нами чере месседжеры
                   </span>
-                </Link>
+                </div>
               )}
             </li>
             <li className={`${state ? "hidden" : "block"} w-[30px]`}>
