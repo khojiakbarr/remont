@@ -46,7 +46,7 @@ export default function MyNavBar() {
           </div>
         </div>
 
-        <nav className=" relative navbar flex container mx-auto px-[15px] w-full mt-[10px] items-center z-10  ">
+        <nav className=" relative navbar flex container mx-auto px-[15px] w-full md:mt-[10px] items-center z-10  ">
           <Link to="/">
             <img
               className={` w-[100px] md:w-[200px] mt-[8px]`}
