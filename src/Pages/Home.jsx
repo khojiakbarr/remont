@@ -77,6 +77,7 @@ export default function Home() {
 
         <div className="max-w-[1060px] mx-auto">
           <BasicAccordion />
+          
         </div>
       </div>
     </>
