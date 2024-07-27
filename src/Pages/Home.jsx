@@ -13,6 +13,7 @@ import { Link } from "react-router-dom";
 import TheForm from "../components/TheForm/TheForm";
 import Doverya from "../components/Doverya/Doverya";
 import Contact from "../components/Contact/Contact";
+import BasicAccordion from "../components/Accordion/BasicAccordion";
 
 export default function Home() {
   return (
@@ -70,6 +71,14 @@ export default function Home() {
       <TheForm />
       <Doverya />
       <Contact />
+
+      <div className="container">
+        <h2 className="text-[40px] font-bold text-center text-[#593f0d] my-[20px]">Остались вопросы?</h2>
+
+        <div className="max-w-[1060px] mx-auto">
+          <BasicAccordion />
+        </div>
+      </div>
     </>
   );
 }
