@@ -15,6 +15,8 @@ import Doverya from "../components/Doverya/Doverya";
 import Contact from "../components/Contact/Contact";
 import BasicAccordion from "../components/Accordion/BasicAccordion";
 import FiveShag from "../components/FiveShag/FiveShag";
+import Companies from "../components/Companies/Companies";
+import TheCarusel from "../components/Carosel/TheCarusel";
 
 export default function Home() {
   return (
@@ -73,7 +75,8 @@ export default function Home() {
       <Doverya />
       <Contact />
       <FiveShag />
-
+      <Companies />
+      <TheCarusel />
       <div className="container">
         <h2 className="text-[30px]  md:text-[40px] font-bold text-center text-[#593f0d] mb-[20px] mt-[100px]">
           Остались вопросы?
