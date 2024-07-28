@@ -14,6 +14,7 @@ import TheForm from "../components/TheForm/TheForm";
 import Doverya from "../components/Doverya/Doverya";
 import Contact from "../components/Contact/Contact";
 import BasicAccordion from "../components/Accordion/BasicAccordion";
+import FiveShag from "../components/FiveShag/FiveShag";
 
 export default function Home() {
   return (
@@ -71,26 +72,27 @@ export default function Home() {
       <TheForm />
       <Doverya />
       <Contact />
+      <FiveShag />
 
       <div className="container">
-        <h2 className="text-[40px] font-bold text-center text-[#593f0d] my-[20px]">
+        <h2 className="text-[30px]  md:text-[40px] font-bold text-center text-[#593f0d] mb-[20px] mt-[100px]">
           Остались вопросы?
         </h2>
 
-        <div className="max-w-[1060px] mx-auto">
+        <div className="max-w-[1060px] mx-auto mt-[30px] mb-[100px]">
           <BasicAccordion />
         </div>
       </div>
 
-      <div className="container my-[100px]">
+      <div className="container my-[100px] px-[15px]">
         <div className="flex shadow-[1px_1px_18px_-8px_#000] p-[10px] md:p-[25px] lg:p-[55px] rounded-[5px] flex-col sm:flex-row">
-          <div className=" lg:min-w-[375px] w-1/3">
+          <div className=" lg:min-w-[375px] w-full md:w-1/3">
             <h2 className="w-[150px] lg:w-[325px] text-[2xl] md:text-3xl lg:text-4xl font-bold text-left text-[#593f0d] mb-[25px] lg:mb-[53px]">
               Контактная информация
             </h2>
 
-            <div className="flex sm:flex-col gap-[23px]">
-              <div className="w-full">
+            <div className="flex md:flex-col gap-[23px] w-full flex-wrap-reverse mb-[30px]">
+              <div className="w-auto md:w-full">
                 <h3 className="text-[18px] md:text-[22px] lg:text-[25px] font-bold text-left text-[#ffc858]">
                   E-mail
                 </h3>
@@ -102,7 +104,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="w-full">
+              <div className="w-auto md:w-full">
                 <h3 className="text-[18px] md:text-[22px] lg:text-[25px] font-bold text-left text-[#ffc858]">
                   Телефон
                 </h3>
@@ -114,7 +116,7 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="w-full">
+              <div className="w-auto md:w-full">
                 <h3 className="text-[18px] md:text-[22px] lg:text-[25px] font-bold text-left text-[#ffc858]">
                   График работы
                 </h3>
@@ -130,7 +132,6 @@ export default function Home() {
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11984.83248494579!2d69.2281415!3d41.32608755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1722079107110!5m2!1sru!2s"
               width="100%"
               height="100%"
-              allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
