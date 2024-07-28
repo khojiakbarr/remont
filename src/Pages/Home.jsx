@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex  justify-center my-[70px]">
-        <button className="button  px-[30px] md:px-[50px] pt-[20px] md:pt-[30px] md:pb-[20px] rounded-[20px] shadow-xl text-[15px] font-[700]">
+        <button className="button  px-[30px] md:px-[50px] pt-[15px] pb-[15px] md:pt-[30px] md:pb-[20px] rounded-[20px] shadow-xl text-[15px] font-[700]">
           ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
         </button>
       </div>
