@@ -13,7 +13,7 @@ export default function FiveShag() {
           вашей мечты
         </h2>
       </div>
-      <div className="flex justify-center">
+      <div className="container px-[15px] flex justify-center">
         <div className="flex flex-col items-start gap-[25px] md:gap-[40px] ">
           <FiveShagCard
             num={"1"}

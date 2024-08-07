@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MyNavBar from "../components/MyNavbar/MyNavBar";
 import Hero from "../components/Hero/Hero";
 import PlanCard from "../components/Cards/PlanCard";
@@ -17,10 +17,81 @@ import BasicAccordion from "../components/Accordion/BasicAccordion";
 import FiveShag from "../components/FiveShag/FiveShag";
 import Companies from "../components/Companies/Companies";
 import TheCarusel from "../components/Carosel/TheCarusel";
+import tel from "../assets/images/telefon_icon.svg";
+import insta from "../assets/images/insta.svg";
+import youtube from "../assets/images/youtube.svg";
+import tg from "../assets/images/tg.svg";
+import tel_icon from "../assets/images/tel.svg";
 
 export default function Home() {
+  const [state, setState] = useState(false);
   return (
     <>
+      <div className={`relative z-[999999]  duration-150 `}>
+        <div
+          style={{
+            transition: "all 0.4s",
+            transform: `translateY(${state ? "0%" : "-100%"})`,
+          }}
+          className="flex flex-col justify-between  items-center fixed w-full h-screen bg-[#ff88009c] backdrop-blur-[5px] "
+        >
+          <div>
+            <div className="flex justify-center">
+              <h3 className="bg-[#ffffff] shadow-[1px_10px_30px_black] flex justify-center items-center gap-[10px] mt-[40px] py-[5px] px-[10px] w-[300px] rounded-[10px]">
+                You tube
+                <span>
+                  <img src={youtube} alt="" />
+                </span>
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <h3 className="bg-[#ffffff] shadow-[1px_10px_30px_black] flex justify-center items-center gap-[10px] mt-[40px] py-[5px] px-[10px] w-[300px] rounded-[10px]">
+                insta
+                <span>
+                  <img src={insta} alt="" />
+                </span>
+              </h3>
+            </div>
+            <div className="flex justify-center">
+              <h3 className="bg-[#ffffff] shadow-[1px_10px_30px_black] flex justify-center items-center gap-[10px] mt-[40px] py-[5px] px-[10px] w-[300px] rounded-[10px]">
+                Telegram
+                <span>
+                  <img src={tg} alt="" />
+                </span>
+              </h3>
+            </div>{" "}
+            <div className="flex justify-center">
+              <h3 className="bg-[#ffffff] shadow-[1px_10px_30px_black] flex justify-center items-center gap-[10px] mt-[40px] py-[5px] px-[10px] w-[300px] rounded-[10px]">
+                Telefon
+                <span>
+                  <img src={tel_icon} alt="" />
+                </span>
+              </h3>
+            </div>
+          </div>
+          <button
+            onClick={() => setState(false)}
+            className="bg-[#171B20] text-white px-[20px] py-[15px] md:px-[30px] md:py-[20px] inline-block text-[13px] font-bold rounded-[15px] md:rounded-[20px] cursor-pointer shadow-[1px_10px_30px_black] mb-[40px]"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+      <div className="relative z-[999]">
+        <div className=" fixed bottom-[20px] md:bottom-[15px] right-[15px]">
+          <button
+            onClick={() => {
+              setState(true);
+            }}
+            className=" shadow-[1px_2px_3px_#000] bg-[#ff8800] px-[14px] py-[10px] flex justify-center flex-col items-center text-[13px] font-bold rounded-[10px]"
+          >
+            <span>
+              <img className="w-[30px] md:w-[50px]" src={tel} alt="" />
+            </span>
+            Связаться
+          </button>
+        </div>
+      </div>
       <MyNavBar />
       <Hero />
       <div className="flex flex-col items-center mt-[30px] md:mt-[50px]">
