@@ -33,7 +33,7 @@ export default function Hero() {
               />
             </button>
           </div>
-          <div className="wrapper_scroll hidden  absolute right-0 top-0 w-[50%] md:flex justify-center ">
+          <div className="wrapper_scroll hidden  absolute right-0 top-0 w-[50%] lg:flex justify-center ">
             <div className="scroller_content flex flex-col gap-[20px] mr-[40px]">
               <div className="rounded-[20px]">
                 <div className=" w-[320px] backdrop-blur-[13px] flex flex-col items-center justify-center p-[20px] rounded-[20px]  ">

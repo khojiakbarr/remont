@@ -12,7 +12,7 @@ export default function MyNavBar() {
   const [state, setState] = useState(false);
   useEffect(() => {
     console.log(window.innerWidth);
-    if (window.innerWidth < 550) {
+    if (window.innerWidth < 1024) {
       setState(true);
     }
   }, []);
@@ -25,24 +25,18 @@ export default function MyNavBar() {
         </div>
         <div className="animate_wrapper relative z-[3]">
           <div className="scroller flex gap-10">
-            <div className="flex">
-              <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
-                +998 99 722 47 53
-              </span>
-            </div>
-            <div className="flex">
-              <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
-                +998 99 722 47 53
-              </span>
-            </div>{" "}
-            <div className="flex">
-              <img className="w-[24px] xl:w-[74px]" src={tel_icon} alt="" />
-              <span className="text-[20px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
-                +998 99 722 47 53
-              </span>
-            </div>
+            <Link to={"tel:+998997224753"}>
+              <div className="flex items-center">
+                <img
+                  className="w-[24px] md:w-[30px] xl:w-[74px]"
+                  src={tel_icon}
+                  alt=""
+                />
+                <span className="nomer text-[13px] text-[#593f0d] md:text-[54px] xl:text-[64px]">
+                  +998 99 722 47 53
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -56,13 +50,7 @@ export default function MyNavBar() {
           </Link>
           <ul className={` flex gap-[6px] items-center md:gap-[12px]`}>
             <li className=" w-[50px] md:w-auto">
-              {state ? (
-                <div className=" text-[8px] text-white flex items-center ml-[10px]">
-                  <button className="button text-black text-[14px] px-[10px] rounded-[8px] font-medium  mt-[8px]">
-                    Связаться
-                  </button>
-                </div>
-              ) : (
+              {!state && (
                 <div className=" text-[8px] text-white md:text-[24px] ml-[20px] ">
                   <span className="md:w-[100px] ">
                     Связаться с нами чере месседжеры

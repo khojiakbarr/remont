@@ -15,6 +15,8 @@ export default function TheForm() {
   function getData(data) {
     console.log(data);
   }
+
+  
   return (
     <div className=" relative mb-[120px] md:mb-[350px]">
       <div className="relative z-[2]">
